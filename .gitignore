@@ -1,0 +1,88 @@
+######################################
+# Build folders
+######################################
+bin/
+obj/
+out/
+publish/
+
+######################################
+# Visual Studio
+######################################
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+######################################
+# Rider
+######################################
+.idea/
+*.sln.iml
+
+######################################
+# VS Code
+######################################
+.vscode/
+
+######################################
+# Logs
+######################################
+*.log
+logs/
+TestResults/
+
+######################################
+# ASP.NET Core
+######################################
+wwwroot/lib/
+wwwroot/dist/
+
+######################################
+# Entity Framework
+######################################
+Migrations/*.Designer.cs
+*.dbmdl
+*.jfm
+
+######################################
+# NuGet
+######################################
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+######################################
+# Secrets (VERY IMPORTANT)
+######################################
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# User Secrets
+**/secrets.json
+
+######################################
+# OS Files
+######################################
+.DS_Store
+Thumbs.db
+
+######################################
+# Azure / Publish Profiles
+######################################
+*.publishsettings
+*.pubxml
+*.pubxml.user
+
+######################################
+# Coverage Reports
+######################################
+coverage/
+*.coverage
+*.coveragexml
