@@ -17,7 +17,9 @@ namespace IdentityService.Infrastructure.Persistence.Repositories
         public async Task<bool> ExistsByEmailAsync(string email, CancellationToken cancellationToken)
         {
             return await _context.Users
-                .AnyAsync(u => u.Email.Value == email.ToLower(), cancellationToken);
+                .AnyAsync(u => u.Email != null && u.Email.Value == email.ToLower(),
+                                cancellationToken
+                                );
         }
         public async Task AddAsync(User user, CancellationToken cancellationToken)
         {

@@ -1,6 +1,7 @@
 using IdentityService.Domain.Events;
 using IdentityService.Domain.ValueObjects;
 using IdentityService.Domain.Enums;
+using IdentityService.Domain.Entities;
 
 namespace IdentityService.Domain.Aggregates;
 
@@ -11,7 +12,7 @@ public sealed class User
     private readonly List<DomainEvent> _domainEvent = new();
 
     public Guid Id { get; private set; }
-    public Email? Email { get; private set; }
+    public Email? Email { get; private set; } = default!;
     public string? PasswordHash { get; private set; }
     public UserType userType { get; private set; }
     public UserStatus userStatus { get; private set; }
